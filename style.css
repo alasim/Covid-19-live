@@ -1,0 +1,192 @@
+ :root {
+     --blue: #007bff;
+     --indigo: #6610f2;
+     --purple: #6f42c1;
+     --pink: #e83e8c;
+     --red: #dc3545;
+     --orange: #fd7e14;
+     --yellow: #ffc107;
+     --green: #28a745;
+     --teal: #20c997;
+     --cyan: #17a2b8;
+     --white: #fff;
+     --gray: #6c757d;
+     --gray-dark: #343a40;
+     --primary: #007bff;
+     --secondary: #6c757d;
+     --success: #28a745;
+     --info: #17a2b8;
+     --warning: #ffc107;
+     --danger: #dc3545;
+     --light: #f8f9fa;
+     --dark: #343
+ }
+
+
+
+
+
+ .main {
+     min-width: 300px;
+ }
+
+ .heading h1 {
+     text-align: center;
+     padding: 40px;
+     text-transform: uppercase;
+     color: cornflowerblue;
+     font-size: 3vw;
+     color: #343A40;
+     font-weight: 600;
+     animation: animHeading 5s linear infinite;
+ }
+
+ @keyframes animHeading {
+     0% {
+         text-shadow: .5px .5px 1px #46AE4E;
+     }
+
+     50% {
+         text-shadow: .5px .5px 1px #46AE4E50;
+     }
+
+     100% {
+         text-shadow: .5px .5px 1px #46AE4E;
+     }
+ }
+
+ .ct {
+     font-size: 2.5vw;
+ }
+
+
+ th {
+     cursor: pointer;
+ }
+
+ .circle {
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     top: 30px;
+     left: 250px;
+
+ }
+
+ .circle > h3 {
+     color: #46AE4E;
+     position: absolute;
+     left: 70px;
+     top: -10px;
+     font-weight: bold;
+     font-size: 20px;
+     text-shadow: .5px .5px 1px #ED6B1B;
+     /*     -webkit-text-stroke: 0px #ED6B1B;*/
+     animation: animLive 2s linear infinite;
+ }
+
+ @keyframes animLive {
+     0% {
+         text-shadow: .5px .5px 1px #ED6B1B;
+     }
+
+     50% {
+         text-shadow: .5px .5px 1px #ED6B1B50;
+     }
+
+     100% {
+         text-shadow: .5px .5px 1px #ED6B1B;
+     }
+ }
+
+ .circle > span {
+     position: absolute;
+     width: 10px;
+     height: 10px;
+     top: 0;
+     bottom: 0;
+     list-style-type: 0;
+     right: 0;
+     background-color: #46AE4E;
+     border-radius: 50%;
+     animation: animate 20s linear infinite;
+ }
+
+ @keyframes animate {
+     0% {
+         background: #46AE4E;
+     }
+
+     100% {
+         transform: scale(5);
+         opacity: 0;
+     }
+
+ }
+
+
+ .circle span:nth-child(2) {
+     animation-delay: 5s;
+ }
+
+ .circle span:nth-child(3) {
+     animation-delay: 10s;
+ }
+
+ .circle span:nth-child(4) {
+     animation-delay: 15s;
+ }
+
+ .circle span:nth-child(5) {
+     animation-delay: 20s;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // Extra small devices (portrait phones, less than 576px)
+ // No media query since this is the default in Bootstrap
+
+ // Small devices (landscape phones, 576px and up)
+ @media (min-width: 576px) {
+     ...
+ }
+
+ // Medium devices (tablets, 768px and up)
+ @media (min-width: 768px) {
+     ...
+ }
+
+ // Large devices (desktops, 992px and up)
+ @media (min-width: 992px) {
+     nav a h1 {
+         font-size: 2vw;
+     }
+ }
+
+ // Extra large devices (large desktops, 1200px and up)
+ @media (min-width: 1200px) {
+     nav a h1 {
+         font-size: 2vw;
+     }
+ }

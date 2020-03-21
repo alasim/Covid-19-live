@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:site_name" content="BeSafe Bangladesh" />
+    <meta property="og:title" content="Bangladesh(20) | Coronavirus Live Updates" />
+    <meta property="og:description" content="This the site where you can get all updates about coronavirus. This site speacially for bangladesh peopel." />
+    <meta property="og:image" content="web.png">
+    <meta property="og:url" content="http://be-safe.live/">
+    <meta property="og:type" content="love server" />
+    <title>Coronavirus updates(Live) | Bangladesh</title>
+    <link rel="icon" href="fab%20(1).png" type="image/gif" sizes="16x16">
+    <!--    font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container bg">
+        <div class="main bg-light">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+                <div class="container">
+                    <div class="circle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h3>LIVE</h3>
+                    </div>
+                    <a class="navbar-brand" href="http://be-safe.live/">
+                        <img width="200px" src="logo3.png" alt="">
+
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.facebook.com/besafeBangladesh.official">Facebook</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.facebook.com/besafeBangladesh.official">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="heading">
+                <h1 class="center">Coronavirus live updates: Bangladesh</h1>
+            </nav>
+            <div class="row">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-3">
+                    <div class="card border-warning mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Global</div>
+                        <div class="card-body text-warning">
+                            <h5 class="card-title">Cases</h5>
+                            <p class="card-text  ct gCases">150,052</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-3">
+                    <div class="card border-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Global</div>
+                        <div class="card-body text-success">
+                            <h5 class="card-title">Reacovered</h5>
+                            <p class="card-text  ct gRecovered">73,731</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-3">
+                    <div class="card border-danger mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Global</div>
+                        <div class="card-body text-danger">
+                            <h5 class="card-title">Deaths</h5>
+                            <p class="card-text  ct gDeaths">5,617</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" role="tab" aria-controls="home">Useful links</a>
+                        <a class="list-group-item list-group-item-action" target="_blank" id="list-messages-list" data-toggle="list" href="https://coronapanel.com/?ref=producthunt" role="tab" aria-controls="messages">Corona Panel</a>
+                        <a class="list-group-item list-group-item-action" target="_blank" id="list-settings-list" data-toggle="list" href="https://www.bbc.com/bengali" role="tab" aria-controls="settings">News BBC Bangla</a>
+                        <a class="list-group-item list-group-item-action" target="_blank" id="list-profile-list" data-toggle="list" href="https://covy.app/?ref=producthunt&c=81210&lat=23.84046&lng=-269.59576&dlat=-0.14704&dlng=-360.24170&z=12" role="tab" aria-controls="profile">Covy (Live map)</a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <ul class="list-group">
+                        <li class="active list-group-item d-flex justify-content-between align-items-center">
+                            <h4 class="bdCountry">bangladesh</h4>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Total Cases
+                            <span class="badge badge-info badge-pill bdCases">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Today Cases
+                            <span class="badge badge-pill bdTodayCases">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Recovered
+                            <span class="badge badge-success badge-pill bdRecovered">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center bdReacovered">
+                            Today Deaths
+                            <span class="badge badge-pill bdTodayDeaths">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Total Deaths
+                            <span class="badge badge-danger badge-pill bdDeaths">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Active Cases
+                            <span class="badge badge-warning badge-pill bdActive">0</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center bdReacovered">
+                            Critical
+                            <span class="badge badge-success badge-pill bdCritical">0</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-8 ">
+                    <embed src="https://coronatest.live/?ref=producthunt#start" style="width:100%; height: 100%;">
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-5">
+                            <h3>All other countries</h3>
+
+                        </div>
+                        <div class="col-7">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search countries" aria-label="Search">
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="max-height: 800px;overflow-y: scroll">
+                <table class="table table-striped">
+                    <thead>
+                        <tr id="tHeader">
+                            <th scope="col">#</th>
+                            <th scope="col" id="country">Country<i class="fa fa-angle-up fa-fw"></i></th>
+                            <th scope="col" id="totalCases">Total Cases<i class="fa fa-angle-up fa-fw"></i></th>
+                            <th scope="col" id="todayCases">Today Cases<i class="fa fa-angle-up fa-fw"></i></th>
+                            <th scope="col" id="recovered">Recovered<i class="fa fa-angle-up fa-fw"></i></th>
+                            <th scope="col" id="deaths">Deaths<i class="fa fa-angle-up fa-fw"></i></th>
+                            <th scope="col" id="todayDeaths">Today Deaths<i class="fa fa-angle-up fa-fw"></i></th>
+                            <th scope="col" id="activeCases">Active Cases<i class="fa fa-angle-up fa-fw"></i></th>
+                            <th scope="col" id="critical">Critical<i class="fa fa-angle-up fa-fw"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+                <div class="container text-center">
+                    <small>Copyright &copy; BeSafe Bangladesh by <a href="https://www.facebook.com/hasan.alasim" style="color: antiquewhite">Hasan Al Asim</a> | stay safe, healthy, informed.</small>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let urlAll = "https://coronavirus-19-api.herokuapp.com/all"
+        axios.get(urlAll)
+            .then(response => {
+                console.log(response.data.cases);
+                $(".gCases").text(formatNumber(response.data.cases));
+                $(".gRecovered").text(formatNumber(response.data.recovered));
+                $(".gDeaths").text(formatNumber(response.data.deaths));
+
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
+        function formatNumber(num) {
+            return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+        }
+    </script>
+    <script src="app.js"></script>
+
+</body></html>
