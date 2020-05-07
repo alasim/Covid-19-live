@@ -18,8 +18,8 @@ $(document).ready(function () {
                   "active",
                   "critical",
               ];
-    let url = "https://corona.lmao.ninja/countries"
-    //    let url = "https://coronavirus-19-api.herokuapp.com/countries"
+    let url = "https://corona.lmao.ninja/v2/countries"
+    //    let url = "https://coronavirus-19-api.herokuapp.com/v2/countries"
 
     axios.get(url)
         .then(response => {
